@@ -65,7 +65,7 @@ public class OnlineShoppingTest {
 
 	 @Test(priority=2)
 	 public void testLogin() {
-	  drive.findElement(By.xpath("//a[contains(text(),'SignIn')]")).click();
+	 //drive.findElement(By.xpath("//a[contains(text(),'SignIn')]")).click();
 	  drive.findElement(By.id("userName")).sendKeys("lalitha");
 	  drive.findElement(By.id("password")).sendKeys("Password123");
 	  drive.findElement(By.name("Login")).click();
