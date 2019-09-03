@@ -72,14 +72,14 @@ public class OnlineShoppingTest {
 	  
 	 }
 	 
-	 @Test(priority=3)
-	 public void testorder() {
-		 drive.findElement(By.xpath("//span[contains(text(),'Orders')]")).click();
-		 String Price1 = drive.findElement(By.xpath("//h4[text()='Carpet']//ancestor::td//following-sibling::td[@data-th='Price']")).getText();
-		 
-		 
-	 }
-	 
+//	 @Test(priority=3)
+//	 public void testorder() {
+//		 drive.findElement(By.xpath("//span[contains(text(),'Orders')]")).click();
+//		 String Price1 = drive.findElement(By.xpath("//h4[text()='Carpet']//ancestor::td//following-sibling::td[@data-th='Price']")).getText();
+//		 
+//		 
+//	 }
+//	 
 	 @Test(enabled=false)
 	 public void testabout() {
 		 drive.findElement(By.xpath("//span[text()='AboutUs']")).click();
@@ -111,7 +111,7 @@ public class OnlineShoppingTest {
 		 
 	 }
 	 
-	 @Test(enabled=false)
+	 @Test(priority=3)
 	 public void testCart() throws Exception {
 	  drive.findElement(By.xpath("//span[contains(text(),'Categories')]")).click();
 	  drive.findElement(By.xpath("//span[contains(text(),'Appliances')]")).click();
@@ -175,7 +175,7 @@ public class OnlineShoppingTest {
 
 	
 
-	 @Test(enabled=false)
+	 @Test(priority=1)
 	 public void testRegistration() {
 	  drive.findElement(By.xpath("//a[@href='RegisterUser.htm']")).click();
 			String timeStamp = new SimpleDateFormat("HHmmss").format(new Timestamp(System.currentTimeMillis()));
